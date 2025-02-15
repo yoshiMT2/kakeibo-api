@@ -20,9 +20,9 @@ func main() {
 		fmt.Println(e)
 	}
 
-	connStr := os.Getenv("DB_URL")
+	connStr := os.Getenv("DATABASE_URL")
 	if connStr == "" {
-		log.Fatal("DB_URL not set")
+		log.Fatal("DATABASE_URL not set")
 	}
 
 	db, err := sql.Open("postgres", connStr)
