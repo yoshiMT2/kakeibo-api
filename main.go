@@ -16,6 +16,10 @@ func main() {
 		log.Println("No .env file found, relying on environment variables")
 	}
 
+	for _, e := range os.Environ() {
+		fmt.Println(e)
+	}
+
 	connStr := os.Getenv("DATABASE_URL")
 	if connStr == "" {
 		log.Fatal("DATABASE_URL not set")
