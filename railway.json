@@ -2,7 +2,7 @@
     "build": {
       "dockerfile": "Dockerfile",
       "args": {
-        "DB_URL": "${DB_URL}"
+        "DATABASE_URL": "@DATABASE_URL"
       }
     }
   }
