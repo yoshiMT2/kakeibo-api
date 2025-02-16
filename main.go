@@ -6,15 +6,14 @@ import (
 	"log"
 	"os"
 
-	"github.com/joho/godotenv"
 	_ "github.com/lib/pq"
 )
 
 func main() {
 
-	if err := godotenv.Load(); err != nil {
-		log.Println("No .env file found, relying on environment variables")
-	}
+	// if err := godotenv.Load(); err != nil {
+	// 	log.Println("No .env file found, relying on environment variables")
+	// }
 
 	for _, e := range os.Environ() {
 		fmt.Println(e)
