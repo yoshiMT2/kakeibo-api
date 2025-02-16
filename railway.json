@@ -1,8 +1,0 @@
-{
-    "build": {
-      "dockerfile": "Dockerfile",
-      "args": {
-        "DATABASE_URL": "@DATABASE_URL"
-      }
-    }
-  }
